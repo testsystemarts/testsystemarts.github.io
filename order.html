@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>注文</title>
+</head>
+
+<body>
+    <h1>注文内容</h1>
+    <!-- action にGASのURLを記述する -->
+    <form method="post" action="#">
+        <p>
+            <label><input type="radio" name="OrderMethod" value="T">電話注文</label>
+            <label><input type="radio" name="OrderMethod" value="F">FAX注文</label>
+            <label><input type="radio" name="OrderMethod" value="L">LINE注文</label>
+        </p>
+
+        <p>
+            <label>注文日時<input type="date" name="time" value="ordertime"></label>
+        </p>
+        <p>
+            <label>客先名<input type="text" name="client"></label>
+        </p>
+
+        <p>
+            <label>発注者名<input type="text" name="orderer"></label>
+        </p>
+        <p>
+            <label>商品名<input type="text" name="ItemName"></label>
+        </p>
+        <p>
+            <label>数量(個)<input type="text" name="quantity"></label>
+        </p>
+        <p>
+            <label>希望納期<input type="date" name="deadline" value="deadline"></label>
+        </p>
+
+        <input type="submit" value="送信">
+
+    </form>
+</body>
+
+</html>
