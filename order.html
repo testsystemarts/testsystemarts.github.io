@@ -9,31 +9,37 @@
 <body>
     <h1>注文内容</h1>
     <!-- action にGASのURLを記述する -->
-    <form method="get" action="https://script.google.com/macros/s/AKfycbyBh8Sqcl3ZnPRsMsiKPlXnMlvL0j754JnhU0Tt6UVB_eASDJziND_E3F2CmaBTgH8/exec">
-        <p>
-            <label><input type="radio" name="ordermethod" value="T">電話注文</label>
-            <label><input type="radio" name="ordermethod" value="F">FAX注文</label>
-            <label><input type="radio" name="ordermethod" value="L">LINE注文</label>
-        </p>
+    <form method="get"
+        action="https://script.google.com/macros/s/AKfycbz4nsj1FhIP1eb1EUxZBzco9s_zGU3hRLRS-BvB8TgcCypVF8AZw1VQK34Ni-foZzKd/exec">
 
         <p>
-            <label>注文日時<input type="date" name="ordertime" value="ordertime"></label>
-        </p>
-        <p>
-            <label>客先名<input type="text" name="client"></label>
+            <label>お客様名<input type="text" name="client"></label>
         </p>
 
-        <p>
-            <label>発注者名<input type="text" name="orderer"></label>
-        </p>
         <p>
             <label>商品名<input type="text" name="itemName"></label>
         </p>
         <p>
-            <label>数量(個)<input type="text" name="quantity"></label>
+            <label>数量<input type="text" name="quantity"></label>
+        </p>
+
+        <p>
+            単位：
+            <label><input type="radio" name="ordermethod" value="個">個</label>
+            <label><input type="radio" name="ordermethod" value="箱">箱</label>
+            <label><input type="radio" name="ordermethod" value="枚">枚</label>
+            <label><input type="radio" name="ordermethod" value="式">式</label>
+
+        </p>
+
+        <p>
+            <label>納期<input type="date" name="deadline" value="deadline"></label>
         </p>
         <p>
-            <label>希望納期<input type="date" name="deadline" value="deadline"></label>
+            <label>画像<input type="file" name="img"></label>
+        </p>
+        <p>
+            <label>備考<input type="text" name="remarks"></label>
         </p>
 
         <input type="submit" value="送信">
