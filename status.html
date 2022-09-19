@@ -10,19 +10,22 @@
     <h1>社員対応状況</h1>
     <!-- action にGASのURLを記述する -->
     <form method="get"
-        action="https://script.google.com/macros/s/AKfycbyBh8Sqcl3ZnPRsMsiKPlXnMlvL0j754JnhU0Tt6UVB_eASDJziND_E3F2CmaBTgH8/exec">
+        action="https://script.google.com/macros/s/AKfycbwpIe_SxIK9kdMOYo78bqCqEameacaShEYAUdcCKMQbH8Ym1OT7YnOVihJbJxdNShQ0/exec">
+
+<p>ID:<br>
+    <label><input type="text" name="id"></label>
+</p>
 
 
-        <p>
-            <label><input type="radio" name="status" value="未対応">未対応</label>
-            <label><input type="radio" name="status" value="対応中">対応中</label>
-            <label><input type="radio" name="status" value="対応済み">対応済み</label>
+
+        <p>対応状況:<br>
+            <label><input type="radio" name="status" value="未対応">未対応</label><br>
+            <label><input type="radio" name="status" value="対応中">対応中</label><br>
+            <label><input type="radio" name="status" value="対応済み">対応済み</label><br>
 
         </p>
 
-        <p>社員名:<br>
-            <label><input type="text" name="employee"></label>
-        </p>
+  
 
 
         <input type="submit" value="送信">
