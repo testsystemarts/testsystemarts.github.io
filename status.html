@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=330">
     <title>対応ステータス</title>
 </head>
 
@@ -10,24 +11,23 @@
     <h1>社員対応状況</h1>
     <!-- action にGASのURLを記述する -->
     <form method="get"
-        action="https://script.google.com/macros/s/AKfycbxNwEltmW41T1AtaRJD4Eeviz2M27SgNvrALvXz-QPVmFQ3cklEcZRyJjU_b4xbdhzw/exec">
+        action="https://script.google.com/macros/s/AKfycbxPYYQh5594krK5Imfd52UkQpMGTCFu6m301-WNYuAmu6GKbC2ytRwmJux_0dEUk0rO/exec">
 
-<p>ID:<br>
-    <label><input type="text" name="id"></label>
-</p>
+        <p>ID:
+            <label><input type="text" name="id"></label>
+        </p>
 
 
 
-        <p>対応状況:<br>
+        <p>対応状況:</p>
             <label><input type="radio" name="status" value="対応中">対応中</label><br>
             <label><input type="radio" name="status" value="対応済み">対応済み</label><br>
 
-        </p>
-
-  
 
 
-        <input type="submit" value="送信">
+
+
+        <p><input type="submit" value="送信"></p>
 
     </form>
 </body>
